@@ -23,7 +23,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .wrap{max-width:1200px;margin:0 auto;padding:0 var(--edge)}
 .kicker{display:block;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-ink);margin:0 0 16px}
 .kicker.on-navy{color:var(--gold-lt)}
-h2{font-family:'Space Grotesk';font-weight:400;font-size:clamp(30px,3.8vw,52px);line-height:1.12;letter-spacing:-.02em;margin:20px 0 0}
+h2{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:400;font-size:clamp(30px,3.8vw,52px);line-height:1.12;letter-spacing:-.02em;margin:20px 0 0}
 .body-copy{font-size:16.5px;line-height:28px;color:rgba(21,32,43,.78);margin:24px 0 0;max-width:54ch}
 .vrule{height:4px;background:var(--vanadium)}
 .mono-note{font-family:'JetBrains Mono',monospace;font-size:12px;line-height:20px;color:rgba(21,32,43,.6)}
@@ -39,18 +39,18 @@ h2{font-family:'Space Grotesk';font-weight:400;font-size:clamp(30px,3.8vw,52px);
 .split img{display:block;width:100%;height:auto}
 .doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border-top:1px solid rgba(250,247,241,.2)}
 .door{padding:32px 28px 36px;border-bottom:1px solid rgba(250,247,241,.2);border-right:1px solid rgba(250,247,241,.2);display:flex;flex-direction:column}
-.door h3{font-family:'Space Grotesk';font-weight:500;font-size:21px;letter-spacing:-.01em;margin:0}
+.door h3{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:21px;letter-spacing:-.01em;margin:0}
 .door p{font-size:14.5px;line-height:24px;color:rgba(250,247,241,.75);margin:12px 0 18px}
-.door a{margin-top:auto;font-family:'Space Grotesk';font-weight:500;font-size:15px;color:var(--gold);text-decoration:none;border-bottom:2px solid var(--gold);align-self:flex-start;padding-bottom:2px}
+.door a{margin-top:auto;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:15px;color:var(--gold);text-decoration:none;border-bottom:2px solid var(--gold);align-self:flex-start;padding-bottom:2px}
 .door a:hover{color:var(--gold-lt);border-color:var(--gold-lt)}
 .timeline{border-top:2px solid var(--ink);margin-top:40px}
 .t-row{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--div)}
 .t-date{font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--gold-ink);font-feature-settings:'tnum' 1;padding-top:2px}
-.t-row h3{font-family:'Space Grotesk';font-weight:500;font-size:19px;letter-spacing:-.01em;margin:0}
+.t-row h3{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:19px;letter-spacing:-.01em;margin:0}
 .t-row p{font-size:14.5px;line-height:24px;color:rgba(21,32,43,.75);margin:6px 0 0;max-width:62ch}
 .chem{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:40px}
 .chem-card{border:1px solid var(--div);background:var(--paper);padding:28px 30px}
-.chem-card h3{font-family:'Space Grotesk';font-weight:500;font-size:22px;letter-spacing:-.01em;margin:0}
+.chem-card h3{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:22px;letter-spacing:-.01em;margin:0}
 .chem-card .tag{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(21,32,43,.55);display:block;margin-bottom:14px}
 .chem-card p{font-size:15px;line-height:26px;color:rgba(21,32,43,.78);margin:14px 0 0}
 .capbar{display:flex;height:64px;border:1px solid var(--div);margin-top:36px;overflow:hidden}
@@ -64,7 +64,7 @@ h2{font-family:'Space Grotesk';font-weight:400;font-size:clamp(30px,3.8vw,52px);
 .post-card .bar{height:5px}
 .post-card .in{padding:24px 26px 28px;display:flex;flex-direction:column;flex:1}
 .post-card .no{font-family:'JetBrains Mono',monospace;font-size:13px;margin:0 0 12px}
-.post-card h3{font-family:'Space Grotesk';font-weight:500;font-size:20px;line-height:1.25;letter-spacing:-.01em;margin:0}
+.post-card h3{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:20px;line-height:1.25;letter-spacing:-.01em;margin:0}
 .post-card p{font-size:14.5px;line-height:24px;color:rgba(21,32,43,.75);margin:12px 0 0}
 .post-card .date{margin-top:auto;padding-top:18px;font-family:'JetBrains Mono',monospace;font-size:12px;color:rgba(21,32,43,.55)}
 @media (max-width:860px){.split{grid-template-columns:1fr}.split.flip .split-copy{order:0}.t-row{grid-template-columns:1fr;gap:6px}}
@@ -74,18 +74,18 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
 /* — article No. 01 (ported from v1) — */
 :root{--divider:rgba(21,32,43,.16);--gold-700:#945D09;--v-01:#6B4FA0;--gold-300:#FCCB80}
 /* — article No. 01 — */
-.article{background:var(--paper); padding:0 var(--edge) 96px}
+.article{background:var(--paper); padding:clamp(56px,9vh,88px) var(--edge) 96px}
 .article-inner{max-width:760px; margin:0 auto}
 .article .post-kicker{font-family:'JetBrains Mono',monospace; font-weight:500; font-size:12.5px;
   letter-spacing:.1em; text-transform:uppercase; color:var(--v-01); margin:0 0 16px}
-.article h2.title{font-family:'Space Grotesk'; font-weight:400; font-size:clamp(32px,4.2vw,52px);
+.article h2.title{font-family:'Space Grotesk',system-ui,sans-serif; font-weight:400; font-size:clamp(32px,4.2vw,52px);
   line-height:1.12; letter-spacing:-.02em; margin:0}
-.article .standfirst{font-family:'Space Grotesk'; font-weight:300; font-size:20px; line-height:1.5;
+.article .standfirst{font-family:'Space Grotesk',system-ui,sans-serif; font-weight:300; font-size:20px; line-height:1.5;
   color:rgba(21,32,43,.8); margin:24px 0 0}
 .article .accent-bar{width:56px; height:3px; background:var(--v-01); margin:32px 0 42px}
 .article .body{font-size:16px; line-height:28px; color:rgba(21,32,43,.88); text-align:justify; hyphens:auto}
 .article .body p{margin:0 0 28px}
-.article .body h3{font-family:'Space Grotesk'; font-weight:500; font-size:24px; line-height:1.25;
+.article .body h3{font-family:'Space Grotesk',system-ui,sans-serif; font-weight:500; font-size:24px; line-height:1.25;
   letter-spacing:-.01em; margin:48px 0 20px; text-align:left}
 .article table{width:100%; border-collapse:collapse; font-size:14px; line-height:24px; margin:0 0 12px}
 .article th{text-align:left; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:12px;
@@ -97,7 +97,7 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
 .article td.dim{color:rgba(21,32,43,.6)}
 .article td.gilt{color:var(--gold-700)}
 .article aside{border-left:3px solid var(--v-01); padding:6px 0 6px 24px; margin:28px 0; text-align:left}
-.article aside p{font-family:'Space Grotesk'; font-weight:400; font-size:20px; line-height:1.45; margin:0; color:var(--ink)}
+.article aside p{font-family:'Space Grotesk',system-ui,sans-serif; font-weight:400; font-size:20px; line-height:1.45; margin:0; color:var(--ink)}
 .article ol{margin:0 0 28px; padding:0 0 0 28px; display:grid; gap:16px; text-align:left}
 .article ol li{padding-left:8px}
 .watching{border-top:1px solid var(--divider); border-bottom:1px solid var(--divider); padding:32px 0; margin:48px 0; text-align:left}
@@ -163,7 +163,7 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
   <nav class="top" style="position:relative">
     <a href="#top" style="display:inline-flex;align-items:center;gap:12px;color:#FAF7F1;margin-right:auto">
       <svg width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 22 a16 16 0 0 1 32 0 Z" fill="#F0A028"></path><rect x="8" y="26" width="32" height="3.5" rx="1.75" fill="#FAF7F1"></rect><rect x="15" y="32" width="25" height="3.5" rx="1.75" fill="#FAF7F1"></rect><rect x="24" y="38" width="16" height="3.5" rx="1.75" fill="#FAF7F1"></rect></svg>
-      <span style="font-family:'Space Grotesk';font-weight:500;font-size:19px;letter-spacing:.06em">FLOW ENERGY</span>
+      <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:19px;letter-spacing:.06em">FLOW ENERGY</span>
     </a>
     <a href="#story" style="color:rgba(250,247,241,.88)">The story</a>
     <a href="#plan" style="color:rgba(250,247,241,.88)">The plan</a>
@@ -172,12 +172,12 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
     <a href="#invitation" style="color:rgba(250,247,241,.88)">Contact</a>
   </nav>
   <div style="position:relative;margin-top:5vh;padding:0 var(--edge);display:flex;flex-direction:column;align-items:center;text-align:center">
-    <h1 style="font-family:'Space Grotesk';font-weight:400;font-size:clamp(38px,5vw,78px);line-height:1.08;letter-spacing:-.02em;color:#FAF7F1;margin:0;max-width:18ch;text-shadow:0 1px 24px rgba(5,13,28,.45)">Everything runs on sunlight.</h1>
-    <p style="font-family:'Space Grotesk';font-weight:300;font-size:clamp(21px,2.3vw,32px);line-height:1.3;color:#F0A028;margin:18px 0 0;text-shadow:0 1px 18px rgba(5,13,28,.5)">We're switching to the live feed.</p>
+    <h1 style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:400;font-size:clamp(38px,5vw,78px);line-height:1.08;letter-spacing:-.02em;color:#FAF7F1;margin:0;max-width:18ch;text-shadow:0 1px 24px rgba(5,13,28,.45)">Everything runs on sunlight.</h1>
+    <p style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:300;font-size:clamp(21px,2.3vw,32px);line-height:1.3;color:#F0A028;margin:18px 0 0;text-shadow:0 1px 18px rgba(5,13,28,.5)">We're switching to the live feed.</p>
     <p style="font-size:16.5px;line-height:27px;color:rgba(250,247,241,.9);margin:24px 0 0;max-width:50ch;text-shadow:0 1px 14px rgba(5,13,28,.5)">Solaris One: gigawatt-scale solar with long-duration vanadium storage, in development where Australia's coal chapter is ending.</p>
     <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:36px">
-      <a href="#subscribe" style="text-decoration:none;white-space:nowrap;font-family:'Space Grotesk';font-weight:500;font-size:15.5px;color:#0B1F3A;background:#F0A028;border:1px solid #F0A028;border-radius:4px;padding:12px 30px">Follow the mission</a>
-      <a href="#story" style="text-decoration:none;white-space:nowrap;font-family:'Space Grotesk';font-weight:500;font-size:15.5px;color:#FAF7F1;background:rgba(11,31,58,.35);border:1px solid rgba(250,247,241,.6);border-radius:4px;padding:12px 30px">How it works</a>
+      <a href="#subscribe" style="text-decoration:none;white-space:nowrap;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:15.5px;color:#0B1F3A;background:#F0A028;border:1px solid #F0A028;border-radius:4px;padding:12px 30px">Follow the mission</a>
+      <a href="#story" style="text-decoration:none;white-space:nowrap;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:15.5px;color:#FAF7F1;background:rgba(11,31,58,.35);border:1px solid rgba(250,247,241,.6);border-radius:4px;padding:12px 30px">How it works</a>
     </div>
     <p style="font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:.08em;color:rgba(250,247,241,.7);margin:30px 0 0">Solaris One · Western Downs, Queensland · site screening underway</p>
   </div>
@@ -193,7 +193,7 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
       <h2>Coal is sunlight that fell 300 million years ago.</h2>
       <p class="body-copy">Every coal-fired power station is a solar plant with a three-hundred-million-year supply chain. Australia receives more live sunlight per square metre than any continent on Earth.</p>
     </div>
-    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Loy_Yang_A_and_B_power_station.jpg" alt="Loy Yang A and B power stations in Victoria's Latrobe Valley, cooling towers over the brown-coal mine" loading="lazy" width="1200" height="800" style="aspect-ratio:3/2;object-fit:cover"></figure>
+    <figure><img src="assets/img/loy-yang.jpg" alt="Loy Yang A and B power stations in Victoria's Latrobe Valley, cooling towers over the brown-coal mine" loading="lazy" width="1024" height="639" style="aspect-ratio:1024/639;object-fit:cover"></figure>
   </section>
   <section class="split flip">
     <div class="split-copy">
@@ -201,7 +201,7 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
       <h2>Catch it at noon. Deliver it at dusk.</h2>
       <p class="body-copy">Midday sun is nearly free; the value is in carrying it to the evening peak. Long-duration storage holds the charge for hours, not minutes.</p>
     </div>
-    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Nyngan_Solar_Plant_Photo.jpg/1280px-Nyngan_Solar_Plant_Photo.jpg" alt="Nyngan Solar Plant, outback New South Wales — panel rows to the horizon" loading="lazy" width="1280" height="853" style="aspect-ratio:1280/853;object-fit:cover"></figure>
+    <figure><img src="assets/img/nyngan.jpg" alt="Nyngan Solar Plant, outback New South Wales — panel rows to the horizon" loading="lazy" width="1280" height="853" style="aspect-ratio:1280/853;object-fit:cover"></figure>
   </section>
   <section class="split">
     <div class="split-copy">
@@ -209,7 +209,7 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
       <h2>Where coal exits, the connection stays.</h2>
       <p class="body-copy">Retiring coal leaves behind the scarcest asset in Australian energy: strong grid connections. The places that burned buried sunlight become the places that catch it falling live.</p>
     </div>
-    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/CSIRO_ScienceImage_9227_Eraring_Power_Station.jpg/1280px-CSIRO_ScienceImage_9227_Eraring_Power_Station.jpg" alt="Eraring Power Station on Lake Macquarie, New South Wales" loading="lazy" width="1280" height="850" style="aspect-ratio:1280/850;object-fit:cover"></figure>
+    <figure><img src="assets/img/eraring.jpg" alt="Eraring Power Station on Lake Macquarie, New South Wales" loading="lazy" width="1280" height="854" style="aspect-ratio:1280/854;object-fit:cover"></figure>
   </section>
 </div>
 
@@ -265,12 +265,12 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
       <path d="M60 235 C 300 225, 500 215, 700 150 C 810 115, 900 105, 960 110 C 990 113, 1010 130, 1020 160" fill="none" stroke="#0B1F3A" stroke-width="3.5" stroke-dasharray="10 8"></path>
       <path d="M 470 100 C 640 100, 760 110, 850 128" fill="none" stroke="#1B7F78" stroke-width="3" marker-end="url(#arr)"></path>
       <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1B7F78"></path></marker></defs>
-      <text x="440" y="42" font-family="Space Grotesk" font-size="19" fill="#C27C10" text-anchor="middle">Solar output — peaks at noon</text>
-      <text x="950" y="88" font-family="Space Grotesk" font-size="19" fill="#0B1F3A" text-anchor="end">Demand — peaks in the evening</text>
-      <text x="665" y="88" font-family="JetBrains Mono" font-size="15" fill="#156861" text-anchor="middle">storage carries it across</text>
-      <text x="60" y="278" font-family="JetBrains Mono" font-size="14" fill="rgba(21,32,43,.55)">6am</text>
-      <text x="440" y="278" font-family="JetBrains Mono" font-size="14" fill="rgba(21,32,43,.55)" text-anchor="middle">noon</text>
-      <text x="860" y="278" font-family="JetBrains Mono" font-size="14" fill="rgba(21,32,43,.55)" text-anchor="middle">7pm</text>
+      <text x="440" y="42" font-family="Space Grotesk, system-ui, sans-serif" font-size="19" fill="#C27C10" text-anchor="middle">Solar output — peaks at noon</text>
+      <text x="950" y="88" font-family="Space Grotesk, system-ui, sans-serif" font-size="19" fill="#0B1F3A" text-anchor="end">Demand — peaks in the evening</text>
+      <text x="665" y="88" font-family="JetBrains Mono, monospace" font-size="15" fill="#156861" text-anchor="middle">storage carries it across</text>
+      <text x="60" y="278" font-family="JetBrains Mono, monospace" font-size="14" fill="rgba(21,32,43,.55)">6am</text>
+      <text x="440" y="278" font-family="JetBrains Mono, monospace" font-size="14" fill="rgba(21,32,43,.55)" text-anchor="middle">noon</text>
+      <text x="860" y="278" font-family="JetBrains Mono, monospace" font-size="14" fill="rgba(21,32,43,.55)" text-anchor="middle">7pm</text>
     </svg>
     <div class="chem">
       <div class="chem-card" style="border-top:3px solid #0B1F3A">
@@ -333,7 +333,7 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
       <h2>We choose ground the way the grid does.</h2>
       <p class="body-copy">Most developers find land, then hope for a connection. We work in reverse: shortlist the strongest nodes on the east coast — where coal's exit leaves capacity behind — then earn the land around them. Connection quality outranks everything else in Australian energy, and securing it is the craft this company is built around.</p>
     </div>
-    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bayswater_Power_Station_in_2015_%28Crop%29.jpg/1280px-Bayswater_Power_Station_in_2015_%28Crop%29.jpg" alt="Bayswater Power Station and its transmission infrastructure, Hunter Valley" loading="lazy" width="1280" height="720" style="aspect-ratio:16/9;object-fit:cover"></figure>
+    <figure><img src="assets/img/bayswater.jpg" alt="Bayswater Power Station and its transmission infrastructure, Hunter Valley" loading="lazy" width="1280" height="842" style="aspect-ratio:1280/842;object-fit:cover"></figure>
   </section>
   <section class="split flip">
     <div class="split-copy">
@@ -407,6 +407,10 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
         </tbody>
       </table>
       <aside><p>Scale check: Australia's entire "probable" large-scale pipeline is about 32 GW. China installs that in roughly five weeks.</p></aside>
+      <figure style="margin:36px 0;background:#fff;padding:12px;border:1px solid rgba(21,32,43,.2)">
+        <img src="assets/img/longyangxia-landsat.jpg" alt="Landsat satellite image of Longyangxia Dam Solar Park, Qinghai, China, 2017 — dark rectangles of panel arrays beside the Yellow River reservoir" loading="lazy" width="1183" height="1410" style="display:block;width:100%;height:auto">
+        <figcaption class="mono-note" style="margin-top:10px;text-align:left">Longyangxia Dam Solar Park, Qinghai — roughly 850 MW co-located with hydro, photographed by Landsat in 2017. Built projects at this scale are visible from orbit. USGS/NASA Landsat, public domain.</figcaption>
+      </figure>
       <h3>The ten-year plan, in one table</h3>
       <p>The five-year plan's headline targets, against where 2025 ended:</p>
       <table>
@@ -479,11 +483,11 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
       </div>
     </div>
     <section id="subscribe" style="margin-top:64px;max-width:560px">
-      <p style="font-family:'Space Grotesk';font-weight:400;font-size:22px;margin:0">Follow the mission</p>
+      <p style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:400;font-size:22px;margin:0">Follow the mission</p>
       <p style="font-size:15px;line-height:26px;color:rgba(250,247,241,.78);margin:10px 0 0">Mission-log chapters and research posts, by email. We publish when it's true.</p>
       <form style="display:flex;gap:12px;align-items:stretch;margin-top:22px" onsubmit="return false">
         <input type="email" placeholder="you@example.com" aria-label="Email address" style="flex:1;min-height:44px;background:transparent;color:#FAF7F1;border:1px solid rgba(250,247,241,.35);border-radius:4px;padding:0 16px;font-family:'Inter',system-ui,sans-serif;font-size:15px">
-        <button type="submit" style="min-height:44px;padding:0 26px;border-radius:4px;font-family:'Space Grotesk';font-weight:500;font-size:15px;background:transparent;color:#F0A028;border:1px solid #F0A028;cursor:pointer">Subscribe</button>
+        <button type="submit" style="min-height:44px;padding:0 26px;border-radius:4px;font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:15px;background:transparent;color:#F0A028;border:1px solid #F0A028;cursor:pointer">Subscribe</button>
       </form>
     </section>
     <div style="height:1px;background:rgba(250,247,241,.14);margin:64px 0 0"></div>
@@ -492,7 +496,7 @@ nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap}
         <span>Flow Energy · from the best sun on Earth · Australia</span>
         <span style="display:flex;gap:28px"><a href="#story" style="color:#FCCB80">The story</a><a href="#journal" style="color:#FCCB80">Journal</a><a href="#subscribe" style="color:#FCCB80">Subscribe</a></span>
       </div>
-      <p style="margin:28px 0 0;font-size:12px;line-height:20px;color:rgba(250,247,241,.5)">Photography via Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Loy_Yang_A_and_B_power_station.jpg" style="color:rgba(250,247,241,.65)">Loy Yang A &amp; B</a> © Marcus Wong, <a href="https://creativecommons.org/licenses/by-sa/3.0/" style="color:rgba(250,247,241,.65)">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Nyngan_Solar_Plant_Photo.jpg" style="color:rgba(250,247,241,.65)">Nyngan Solar Plant</a> © DiamondIIIXX, <a href="https://creativecommons.org/licenses/by-sa/4.0/" style="color:rgba(250,247,241,.65)">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_9227_Eraring_Power_Station.jpg" style="color:rgba(250,247,241,.65)">Eraring</a> © CSIRO / Nick Pitsas, <a href="https://creativecommons.org/licenses/by/3.0/" style="color:rgba(250,247,241,.65)">CC BY 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Bayswater_Power_Station_in_2015_(Crop).jpg" style="color:rgba(250,247,241,.65)">Bayswater</a> © Jeremy Buckingham, <a href="https://creativecommons.org/licenses/by/2.0/" style="color:rgba(250,247,241,.65)">CC BY 2.0</a>. Images unmodified. Hero scene is an illustration, not a photograph of a real place.</p>
+      <p style="margin:28px 0 0;font-size:12px;line-height:20px;color:rgba(250,247,241,.5)">Photography via Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Loy_Yang_A_and_B_power_station.jpg" style="color:rgba(250,247,241,.65)">Loy Yang A &amp; B</a> © Marcus Wong, <a href="https://creativecommons.org/licenses/by-sa/3.0/" style="color:rgba(250,247,241,.65)">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Nyngan_Solar_Plant_Photo.jpg" style="color:rgba(250,247,241,.65)">Nyngan Solar Plant</a> © DiamondIIIXX, <a href="https://creativecommons.org/licenses/by-sa/4.0/" style="color:rgba(250,247,241,.65)">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_9227_Eraring_Power_Station.jpg" style="color:rgba(250,247,241,.65)">Eraring</a> © CSIRO / Nick Pitsas, <a href="https://creativecommons.org/licenses/by/3.0/" style="color:rgba(250,247,241,.65)">CC BY 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Bayswater_Power_Station_in_2015_(Crop).jpg" style="color:rgba(250,247,241,.65)">Bayswater</a> © Jeremy Buckingham, <a href="https://creativecommons.org/licenses/by/2.0/" style="color:rgba(250,247,241,.65)">CC BY 2.0</a>. Longyangxia Solar Park satellite image: USGS/NASA Landsat, public domain. Images unmodified and self-hosted. Hero scene is an illustration, not a photograph of a real place.</p>
     </footer>
   </div>
 </div>
