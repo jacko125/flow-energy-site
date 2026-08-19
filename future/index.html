@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Future renewable technologies, read honestly: space-based solar, orbital mirrors, and the storage chemistries beyond four hours — with the timelines the roadmaps actually say.">
+<meta property="og:title" content="Flow Energy — future renewable technologies">
+<meta property="og:description" content="The frontier, read the way we read everything: plain claims, sourced figures, honest timelines. Space solar arrives a generation after Solaris Three — we watch it anyway.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<title>Flow Energy — future renewable technologies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#F0A028;--gold-deep:#C27C10;--gold-ink:#945D09;--gold-lt:#FCCB80;--navy:#0B1F3A;--paper:#FAF7F1;--surface:#F1EBDF;--ink:#15202B;--teal:#156861;--div:rgba(21,32,43,.16);--vanadium:linear-gradient(90deg,#6B4FA0,#2E8B57,#1E6FB8,#E8C540);--edge:clamp(20px,5vw,72px)}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;text-wrap:pretty}
+a{color:var(--teal)}a:hover{color:#10514C}
+::selection{background:rgba(240,160,40,.25)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 var(--edge)}
+.kicker{display:block;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-ink);margin:0 0 16px}
+.kicker.on-navy{color:var(--gold-lt)}
+h1{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:400;font-size:clamp(34px,4.6vw,62px);line-height:1.1;letter-spacing:-.02em;margin:16px 0 0}
+h2{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:400;font-size:clamp(28px,3.4vw,44px);line-height:1.14;letter-spacing:-.02em;margin:20px 0 0}
+h3{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:21px;letter-spacing:-.01em;margin:28px 0 0}
+.body-copy{font-size:16.5px;line-height:28px;color:rgba(21,32,43,.78);margin:24px 0 0;max-width:62ch}
+.mono-note{font-family:'JetBrains Mono',monospace;font-size:12px;line-height:20px;color:rgba(21,32,43,.6)}
+.vrule{height:4px;background:var(--vanadium)}
+nav.top{display:flex;align-items:center;gap:26px;padding:18px max(var(--edge),calc((100% - 1080px)/2 + var(--edge)));flex-wrap:wrap;background:var(--navy)}
+nav.top a{text-decoration:none;font-size:14.5px;white-space:nowrap;color:rgba(250,247,241,.88)}
+nav.top .here{color:var(--gold);border-bottom:2px solid var(--gold);padding-bottom:2px}
+.tech-card{border:1px solid var(--div);background:#fff;padding:26px 28px;margin-top:24px}
+.tech-card .tag{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(21,32,43,.55);display:block;margin-bottom:12px}
+.tech-card h3{margin:0}
+.tech-card p{font-size:15px;line-height:26px;color:rgba(21,32,43,.78);margin:14px 0 0}
+.clock{background:var(--navy);color:#FAF7F1;padding:26px 30px;margin:36px 0 0}
+.clock p{font-size:15.5px;line-height:26px;color:rgba(250,247,241,.85);margin:0}
+.clock .big{font-family:'Space Grotesk',system-ui,sans-serif;font-size:24px;line-height:1.3;margin:0 0 10px;color:var(--gold-lt)}
+.watch{border-top:1px solid var(--div);border-bottom:1px solid var(--div);padding:28px 0;margin:44px 0 0}
+.watch h3{font-family:'JetBrains Mono',monospace!important;font-weight:500!important;font-size:12.5px!important;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-ink);margin:0 0 18px}
+.watch ul{margin:0;padding:0 0 0 22px;display:grid;gap:12px;font-size:15.5px;line-height:26px}
+.sources{margin-top:44px}
+.sources h3{font-family:'JetBrains Mono',monospace!important;font-weight:500!important;font-size:12.5px!important;letter-spacing:.1em;text-transform:uppercase;color:rgba(21,32,43,.6);margin:0 0 14px}
+.sources p{font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:22px;color:rgba(21,32,43,.65);margin:0}
+figure.photo{margin:36px 0 0;background:#fff;padding:12px;border:1px solid rgba(21,32,43,.2)}
+figure.photo img{display:block;width:100%;height:auto}
+figure.photo figcaption{margin-top:10px}
+@media (max-width:860px){.two-col{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <a href="../" style="display:inline-flex;align-items:center;gap:12px;color:#FAF7F1;margin-right:auto">
+    <svg width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 22 a16 16 0 0 1 32 0 Z" fill="#F0A028"></path><rect x="8" y="26" width="32" height="3.5" rx="1.75" fill="#FAF7F1"></rect><rect x="15" y="32" width="25" height="3.5" rx="1.75" fill="#FAF7F1"></rect><rect x="24" y="38" width="16" height="3.5" rx="1.75" fill="#FAF7F1"></rect></svg>
+    <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:19px;letter-spacing:.06em">FLOW ENERGY</span>
+  </a>
+  <a href="../#story">The story</a>
+  <a href="../#vision">The vision</a>
+  <a href="../#plan">The plan</a>
+  <a href="../#journal">Journal</a>
+  <a href="#top" class="here">Future tech</a>
+  <a href="../#invitation">Contact</a>
+</nav>
+<div class="vrule"></div>
+
+<header id="top" style="background:var(--navy);color:#FAF7F1">
+  <div class="wrap" style="padding-top:clamp(56px,9vh,96px);padding-bottom:clamp(56px,9vh,96px)">
+    <span class="kicker on-navy">The frontier</span>
+    <h1 style="color:#FAF7F1;max-width:16ch">Future renewable technologies</h1>
+    <p class="body-copy" style="color:rgba(250,247,241,.85)">The mission is measured in decades, so we read the frontier the same way we publish everything else: plain claims, sourced figures, honest timelines. Some of what follows could reshape the industry we are building in. None of it changes what we build this decade — and we will say exactly why.</p>
+  </div>
+</header>
+
+<main class="wrap" style="padding-bottom:clamp(64px,10vh,110px)">
+
+  <!-- ============ SOLAR FROM SPACE ============ -->
+  <section style="padding-top:clamp(56px,9vh,88px)">
+    <span class="kicker">Solar, without weather</span>
+    <h2 style="max-width:22ch">Above the atmosphere, the sun never sets and never dims.</h2>
+    <p class="body-copy">In high orbit, sunlight arrives at about 1.36 kilowatts per square metre — roughly a third more than the best midday sun reaching the ground — with no clouds, no dust, no night for all but minutes of the year. That physics is why space solar keeps being proposed, and why serious agencies now study it seriously. Every satellite ever flown is proof the collection part works; the hard part is getting the energy down.</p>
+
+    <figure class="photo">
+      <img src="../assets/img/rosa-iss.jpg" alt="Astronaut spacewalk view of a Roll-Out Solar Array being deployed on the International Space Station" loading="lazy" width="1280" height="852">
+      <figcaption class="mono-note">Already built: a Roll-Out Solar Array deploying on the International Space Station. Solar has powered spacecraft for nearly seventy years — the unsolved economics are in the beaming, not the collecting. Photo: NASA, public domain.</figcaption>
+    </figure>
+
+    <div class="tech-card">
+      <span class="tag">Demonstrated · 2023</span>
+      <h3>Beaming power from orbit — milliwatts, and a milestone</h3>
+      <p>In 2023, Caltech's SSPD-1 demonstrator used its MAPLE experiment — an array of lightweight microwave transmitters steering energy by interference, no moving parts — to transfer power wirelessly in orbit, and to send a detectable signal to a rooftop receiver in Pasadena. It was the first time energy was deliberately beamed to Earth from space. It was also milliwatts. The gap between a detectable signal and a power station is the entire engineering problem, and nobody credible pretends otherwise.</p>
+    </div>
+
+    <div class="tech-card">
+      <span class="tag">Programme · Europe</span>
+      <h3>The other SOLARIS</h3>
+      <p>The European Space Agency's space-solar programme shares a name with our first park. ESA's SOLARIS studies a system that would deliver continuous power by radio waves from orbit, arguing a plant in space could produce up to seven times the energy of the same plant on the ground. Its own roadmap puts standard gigawatt-scale plants at 2040–2045, with a ministerial decision on whether to fund full development taken at the end of 2025. That is the most optimistic credible schedule in the field.</p>
+    </div>
+
+    <div class="tech-card">
+      <span class="tag">Concept · the Moon</span>
+      <h3>Lunar solar</h3>
+      <p>The furthest-out version: build the arrays on the Moon — a stable platform with no atmosphere at all, potentially manufacturing panels from lunar material — and beam the output to receiving stations on Earth by microwave. Concept studies exist; hardware does not. Nothing at this scale has moved past paper, and the honest status is exactly that.</p>
+    </div>
+
+    <div class="tech-card">
+      <span class="tag">Flying this year · with caveats</span>
+      <h3>Mirrors that stretch the evening</h3>
+      <p>A nearer, smaller idea: orbital mirrors that reflect sunlight onto solar farms after dusk — extending the generating day rather than beaming power. Reflect Orbital received US approval in July 2026 and plans to launch its first demonstrator, an 18-metre film reflector, late this year, with ambitions of tens of thousands of mirrors. The honest caveats: from orbit, a mirror's light spreads over kilometres and passes overhead in minutes, so each satellite delivers faint, brief light — and astronomers have raised serious objections to brightening the night sky. A real experiment worth watching; not yet a product.</p>
+    </div>
+
+    <div class="tech-card">
+      <span class="tag">The physics, told straight</span>
+      <h3>What space gives — and what it charges</h3>
+      <p>Space removes weather, night and atmosphere from solar. It does not remove thermal management: vacuum has no air to carry heat away, so panels shed heat only by radiation and run hot in full sun — a solved engineering problem on every spacecraft, but a cost, not the free win it is sometimes described as. And every path down runs through a conversion chain — sunlight to electricity to microwaves, across thousands of kilometres, back to electricity in a receiving field kilometres wide — where each step loses energy and each element must get cheap at once, launch included.</p>
+    </div>
+
+    <div class="clock">
+      <p class="big">Every credible roadmap says the 2040s.</p>
+      <p>Caltech beamed detectable power in 2023. ESA's most optimistic schedule reaches gigawatt plants between 2040 and 2045. That is a generation after Solaris Three completes the fleet. Space solar is not a competitor to storage this decade or next — it is the industry our grandchildren might work in. And one detail rarely mentioned: a receiving station is a large field of antennas feeding the grid — it needs exactly what we are securing now. Strong connections and welcoming land stay scarce, whichever direction the power arrives from.</p>
+    </div>
+  </section>
+
+  <!-- ============ STORAGE BEYOND FOUR HOURS ============ -->
+  <section style="padding-top:clamp(64px,10vh,100px)">
+    <span class="kicker">Storage, beyond four hours</span>
+    <h2 style="max-width:22ch">The evening is solved. The frontier is the week.</h2>
+    <p class="body-copy">Lithium owns the first four hours and vanadium is our long-duration bet — that is the plan on the front page. The frontier question is what carries a grid through days, not hours. Four chemistries are worth watching, and one test applies to all of them.</p>
+
+    <div class="tech-card">
+      <span class="tag">Arriving · sodium-ion</span>
+      <h3>Sodium-ion — lithium without the lithium</h3>
+      <p>Salt-based cells with no lithium, no cobalt and better cold-weather manners. Prototype cells are approaching 200 watt-hours per kilogram, and August 2026 saw the chemistry's first commercial sale reported in Australia. Stationary storage does not care much about weight — it cares about dollars per kilowatt-hour, and sodium's promise is a structurally cheaper supply chain. This is the challenger our own cost assumptions watch most closely.</p>
+    </div>
+
+    <div class="tech-card">
+      <span class="tag">First install · iron-air</span>
+      <h3>Iron-air — a hundred hours of rust</h3>
+      <p>Iron-air batteries store energy by rusting iron and reversing it — dirt-cheap materials, very slow discharge, built for multi-day duty. Form Energy's first commercial system, 1.5 MW with 150 MWh — one hundred hours of storage — is being installed in Minnesota with the full project expected online in 2026, and a 10 MW / 1,000 MWh system is planned in Ireland. Low efficiency, enormous duration: a different tool, not a better battery.</p>
+    </div>
+
+    <div class="tech-card">
+      <span class="tag">Our own bet's frontier · vanadium</span>
+      <h3>Vanadium's next decade</h3>
+      <p>Vanadium flow's ceiling is chemistry: how much vanadium dissolves in the electrolyte caps the energy per litre, and twenty years of research has moved that from roughly 25 to roughly 40 watt-hours a litre. The chemistry's real gifts are elsewhere — the electrolyte never wears out, holds its value, and can be leased rather than bought, made in Queensland from Queensland vanadium. The frontier for vanadium is not density; it is the cost of the stacks around it.</p>
+    </div>
+
+    <div class="tech-card">
+      <span class="tag">Studied honestly · hydrogen</span>
+      <h3>Hydrogen — dense and cheap, never efficient</h3>
+      <p>We studied hydrogen storage in depth this year. Round trip, roughly two-thirds of the energy is lost — against under a fifth for batteries. But hydrogen's storage capacity itself is many times cheaper per kilowatt-hour, so past somewhere between seven and twenty hours of duration, the maths turns in its favour. The honest summary from our own work: hydrogen is a fuel for the rare long gap, not a battery for the nightly cycle.</p>
+    </div>
+
+    <div class="clock">
+      <p class="big">One test for every chemistry.</p>
+      <p>Australian dollars per kilowatt-hour, at eight hours of duration, bankable in Australia before the end of the decade. CSIRO's GenCost 2025-26 prices grid batteries at A$385 per kilowatt-hour at four hours and A$308 at eight — that is the bar a challenger must beat, in a contract a lender will sign, not a press release. Our daily news filter watches every one of these chemistries against it.</p>
+    </div>
+
+    <div class="watch">
+      <h3>What we're watching</h3>
+      <ul>
+        <li>ESA's decision on funding SOLARIS full development — and whether any programme publishes an end-to-end beaming efficiency measured outside a lab.</li>
+        <li>Reflect Orbital's first demonstrator: measured light on the ground, in numbers, versus the promise.</li>
+        <li>Sodium-ion's first Australian grid-scale price in dollars per kilowatt-hour — the moment it becomes comparable, not just promising.</li>
+        <li>Form Energy's Minnesota system through its first year — does one hundred hours survive contact with a real grid?</li>
+        <li>Whether any vanadium system clears A$300 per kilowatt-hour at eight hours before 2028 — the number our own demonstrator decision waits on.</li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h3>Sources · dated</h3>
+      <p>Caltech, SSPD-1 / MAPLE wireless power transfer and mission wrap-up (2023–24) · ESA, SOLARIS programme pages and Thales Alenia system study (2023–25) · Reflect Orbital US approval and demonstrator reporting — ABC News, Dezeen (July 2026) · Form Energy and Great River Energy, Cambridge Minnesota project releases; Energy-Storage.news (2023–26) · pv magazine, sodium-ion prototype densities and first Australian sale (August 2026) · CSIRO GenCost 2025-26 Final (July 2026) · Flow Energy hydrogen storage study (August 2026), cost reference and daily brief archive. Figures as published at the dates shown; where a claim is a concept, we have said so.</p>
+    </div>
+  </section>
+</main>
+
+<div style="background:#0B1F3A;color:#FAF7F1">
+  <div class="wrap" style="padding:36px var(--edge) 40px 0;max-width:1080px">
+    <footer style="padding-left:var(--edge);font-size:13px;line-height:24px;color:rgba(250,247,241,.6)">
+      <div style="display:flex;flex-wrap:wrap;gap:14px 56px;justify-content:space-between">
+        <span>Flow Energy · from the best sun on Earth · Australia</span>
+        <span style="display:flex;gap:28px"><a href="../" style="color:#FCCB80">Home</a><a href="../#journal" style="color:#FCCB80">Journal</a><a href="../#subscribe" style="color:#FCCB80">Subscribe</a></span>
+      </div>
+      <p style="margin:24px 0 0;font-size:12px;line-height:20px;color:rgba(250,247,241,.5)">Space photography: NASA (Roll-Out Solar Array, ISS), public domain, unmodified. The future tense on this page is ambition; every present-tense claim traces to the sources above.</p>
+      <div style="height:4px;background:var(--vanadium);margin-top:28px"></div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
